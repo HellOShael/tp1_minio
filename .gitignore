@@ -1,0 +1,16 @@
+# Dossier Terraform / OpenTofu
+.terraform/
+.terraform.lock.hcl
+
+# Fichiers d'état
+*.tfstate
+*.tfstate.*
+
+# Variables secrètes
+*.tfvars
+*.auto.tfvars
+secret*.tfvars
+
+# Fichiers système
+.DS_Store
+Thumbs.db

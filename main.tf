@@ -8,11 +8,10 @@ terraform {
 }
 
 provider "minio" {
-  minio_server   = "localhost:9000"   # ou "127.0.0.1:9000"
-  minio_user     = "minioadmin"
-  minio_password = "minioadmin"
-  # minio_region   = "us-east-1"      # optionnel
-  # minio_ssl      = false            # optionnel si tu es en http
+  minio_server     = "127.0.0.1:9000"
+  minio_access_key = "minioadmin"
+  minio_secret_key = "minioadmin"
+  minio_ssl        = false
 }
 
 resource "minio_s3_bucket" "tp1_bucket" {
